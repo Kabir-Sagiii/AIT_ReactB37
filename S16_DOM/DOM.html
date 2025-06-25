@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //Javascript Code
+      function printDocument() {
+        var count = 0;
+        for (var key in document) {
+          console.log(key);
+          count++;
+        }
+        console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Introduction to DOM</h1>
+    <button onclick="printDocument()">Modify UI</button>
+  </body>
+</html>

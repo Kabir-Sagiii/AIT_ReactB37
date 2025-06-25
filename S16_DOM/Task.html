@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //Javascript Code
+      function ModifyUI() {
+        var h1DOMElement = document.getElementById("title");
+
+        h1DOMElement.innerText = "DOM Modified";
+
+        // var count = 0;
+        // for (var key in h1DOMElement) {
+        //   console.log(key);
+        //   count++;
+        // }
+        // console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="title">Introduction to DOM</h1>
+    <button onclick="ModifyUI()">Modify UI</button>
+  </body>
+</html>
