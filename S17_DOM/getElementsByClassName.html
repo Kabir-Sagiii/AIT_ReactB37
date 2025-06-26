@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeStyle() {
+        var h1Array = document.getElementsByClassName("heading");
+        h1Array[0].innerText = "Changed Heading";
+        h1Array[0].style.color = "green";
+
+        h1Array[2].style.backgroundColor = "black";
+        h1Array[2].style.padding = "20px";
+        h1Array[2].style.color = "white";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 class="heading">Heading 1</h1>
+    <h1 class="heading">Heading 2</h1>
+    <h1 class="heading">Heading 3</h1>
+    <button onclick="changeStyle()">Change Color</button>
+  </body>
+</html>
