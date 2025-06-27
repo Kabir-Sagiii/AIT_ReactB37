@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function addImage() {
+        //1. create imageDOMElement
+        var image_DomElement = document.createElement("img");
+
+        var para = document.createElement("p");
+        para.innerText = "Car look Awesome, One of the Best in the Market";
+        para.style.color = "blue";
+
+        var btnDomElement = document.getElementById("add");
+        btnDomElement.disabled = true;
+
+        var btnDomElement2 = document.getElementById("remove");
+        btnDomElement2.disabled = false;
+
+        //add src, width and height attribute
+        image_DomElement.src =
+          "https://www.stugon.com/wp-content/uploads/2013/12/Exotic-Car-Wallpapers-HD-Edition-stugon.com-3.jpg";
+        image_DomElement.width = "500";
+        image_DomElement.height = "300";
+
+        //add imageDOMElement inside the DOM
+        var div_DomElement = document.querySelector("div");
+        div_DomElement.appendChild(image_DomElement);
+        div_DomElement.appendChild(para);
+      }
+
+      function removeImage() {
+        var image_DomElement = document.querySelector("img");
+        image_DomElement.remove();
+
+        var para = document.querySelector("p");
+        para.remove();
+
+        var btnDomElement = document.getElementById("add");
+        btnDomElement.disabled = false;
+
+        var btnDomElement2 = document.getElementById("remove");
+        btnDomElement2.disabled = true;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div style="text-align: center; margin-top: 100px">
+      <h2>Add / Remove Image</h2>
+      <button id="add" onclick="addImage()">Add</button>
+      <button id="remove" disabled onclick="removeImage()">Remove</button
+      ><br /><br />
+    </div>
+  </body>
+</html>
