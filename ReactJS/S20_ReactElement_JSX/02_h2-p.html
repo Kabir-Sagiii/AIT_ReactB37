@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      //h2
+      var h2 = React.createElement(
+        "h2",
+        { className: "c1", name: "heading" },
+        "React JS"
+      );
+
+      //p
+      var p = React.createElement(
+        "p",
+        { style: { color: "red", backgroundColor: "black", padding: "20px" } },
+        "React JS is a JS Library for building UI"
+      );
+
+      //h2 and p add in the DOM
+      ReactDOM.render(
+        [p, h2, h2, p, h2, p, p],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
