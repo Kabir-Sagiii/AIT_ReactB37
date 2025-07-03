@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var h2Style = {
+        color: "green",
+        backgroundColor: "black",
+        padding: "10px",
+      };
+
+      var div = (
+        <div style={{ border: "2px solid red", padding: "20px" }}>
+          <h2 style={h2Style}> React Looks Very Simple Now </h2>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/025/474/309/large_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+            width="300"
+            height="300"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            consectetur provident obcaecati quas animi nulla doloremque eius
+            debitis a repellat voluptate sequi iure alias tempore, delectus unde
+            magnam totam odio aperiam corrupti illo, quam vero dolor. Repellat
+            fugiat, accusamus excepturi vero quos dolor ab dolorem expedita
+            dolore voluptas, eligendi esse earum ea minima mollitia praesentium
+            error velit atque quisquam cumque magni consectetur. Debitis magni
+            culpa saepe obcaecati natus enim autem, incidunt velit sed molestiae
+            labore tempora quaerat iure nisi sint blanditiis a, nam, vero id
+            similique necessitatibus dolorem iusto. Eius laudantium architecto
+            adipisci soluta quidem. Accusamus consequuntur officia esse
+            provident.{" "}
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
