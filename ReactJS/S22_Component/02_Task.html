@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 800px;
+        padding: 20px;
+        box-shadow: 0 0 10px black;
+        background-color: lightslategray;
+        color: white;
+        margin: 20px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createBox(title) {
+        return (
+          <div id="container">
+            <h2> {title} </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas,
+              itaque recusandae laboriosam quo veritatis voluptatum, tempora
+              cupiditate officia saepe minus rem. Rem sunt est quasi. Ea neque
+              quaerat dolor numquam officiis ullam ducimus ipsam molestias
+              alias, consectetur tempora saepe quis
+            </p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        [
+          createBox("HTML is a Markup Language"),
+          createBox("CSS is a Styling Language"),
+          createBox("JS is a Programming Language"),
+        ],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
