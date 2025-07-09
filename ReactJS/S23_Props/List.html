@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyList(para) {
+        //para = {item1:"",item2:"",item3:""}
+        return (
+          <ol>
+            <li>{para.item1}</li>
+            <li>{para.item2}</li>
+            <li>{para.item3}</li>
+          </ol>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <MyList item1={"html"} item2={"css"} item3={"js"} />
+            <MyList item1={"react"} item2={"angular"} item3={"vue js"} />
+            <MyList item1={"nodejs"} item2={"springboot"} item3={"django"} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
