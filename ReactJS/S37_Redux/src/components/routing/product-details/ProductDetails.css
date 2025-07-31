@@ -1,0 +1,29 @@
+.product-details {
+  width: 1100px;
+  height: 470px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px black;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.product-details-data {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.product-details-data dt {
+  font-size: 21px;
+  font-weight: bold;
+  color: yellow;
+  margin-bottom: 10px;
+}
+.product-details-data dd {
+  margin-bottom: 20px;
+}
+.product-details-data button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

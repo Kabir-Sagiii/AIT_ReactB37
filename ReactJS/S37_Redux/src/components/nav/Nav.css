@@ -1,0 +1,32 @@
+.nav {
+  height: 80px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.brandName {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus a {
+  color: white;
+  font-size: 17px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+.menus button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+}
