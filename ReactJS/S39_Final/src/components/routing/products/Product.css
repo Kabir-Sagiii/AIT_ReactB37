@@ -1,0 +1,66 @@
+.adContainer {
+  height: 450px;
+  width: 1100px;
+  box-shadow: 0 0 10px black;
+  margin: 30px auto;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://img.freepik.com/premium-photo/showcase-electronic-items-black-background_893571-15169.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.adContainer h1,
+p {
+  color: white;
+  text-align: center;
+}
+.adContainer h1 {
+  font-size: 72px;
+  margin-bottom: 13px;
+}
+.categories {
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.categories label {
+  margin-left: 7px;
+}
+.products {
+  width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.card {
+  width: 270px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px green;
+  background-color: black;
+  color: white;
+}
+.card h4 {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.card p {
+  margin-bottom: 15px;
+}
+.card button {
+  padding: 7px 15px;
+  margin-right: 10px;
+}
+.card img:hover {
+  transform: scale(1.2);
+}
+.card h4:hover {
+  color: green;
+}

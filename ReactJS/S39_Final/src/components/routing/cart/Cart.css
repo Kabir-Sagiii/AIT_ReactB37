@@ -1,0 +1,8 @@
+.cartTable {
+  margin-top: 50px;
+  padding: 20px;
+}
+thead tr {
+  background-color: black;
+  color: white;
+}
